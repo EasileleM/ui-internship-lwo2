@@ -1,3 +1,3 @@
-export function convertToF(celsius) {
-    return celsius*9/5+32;
+export function convertCelsiusToFahr(celsius) {
+  return celsius*1.8+32;
 }
