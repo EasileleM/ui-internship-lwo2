@@ -1,3 +1,6 @@
 export function trimWhiteSpaces(str) {
-  return str.replace(RegExp(' ', 'g'), '');
+  return str
+      .replace(
+          RegExp(' ', 'g'),
+          '');
 }
