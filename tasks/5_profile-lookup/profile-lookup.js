@@ -27,7 +27,7 @@ let contacts = [
 
 export function lookupProfile(firstName, prop) {
   for (const contact of contacts) {
-    if (contact.firstName===firstName) {
+    if (contact.firstName === firstName) {
       if (contact.hasOwnProperty(prop)) return contact[prop];
       return 'No such property';
     }
