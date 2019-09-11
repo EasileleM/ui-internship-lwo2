@@ -2,6 +2,7 @@ export function titleCase(str) {
   let arr = str
       .toLowerCase()
       .split(' ');
-  arr.forEach((e, i) => arr[i] = e.charAt(0).toUpperCase() + e.slice(1));
+  const changeWord = (w, i) => arr[i] = w.charAt(0).toUpperCase() + w.slice(1);
+  arr.forEach(changeWord);
   return arr.join(' ');
 }

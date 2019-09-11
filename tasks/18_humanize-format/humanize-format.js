@@ -1,5 +1,7 @@
 export function humanizeFormat(number) {
-  if (number === undefined) return '';
+  if (number === undefined) {
+    return '';
+  }
   switch (number % 10) {
     case 1: return number + 'st';
     case 2: return number + 'nd';
