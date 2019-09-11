@@ -1,23 +1,23 @@
 export function golfScore(par, strokes) {
   if (strokes === 1) {
-    return 'Hole-in-one!';
+    return GOLF_SCORES.HOLE_IN_ONE;
   }
-  if (strokes <= par-2) {
-    return 'Eagle';
+  if (strokes <= par - 2) {
+    return GOLF_SCORES.EAGLE;
   }
-  if (strokes === par-1) {
-    return 'Birdie';
+  if (strokes === par - 1) {
+    return GOLF_SCORES.BIRDIE;
   }
   if (strokes === par) {
-    return 'Par';
+    return GOLF_SCORES.PAR;
   }
-  if (strokes === par+1) {
-    return 'Bogey';
+  if (strokes === par + 1) {
+    return GOLF_SCORES.BOGEY;
   }
-  if (strokes === par+2) {
-    return 'Double Bogey';
+  if (strokes === par + 2) {
+    return GOLF_SCORES.DOUBLE_BOGEY;
   }
-  return 'Go Home!';
+  return GOLF_SCORES.GO_HOME;
 }
 
 export const GOLF_SCORES = {
