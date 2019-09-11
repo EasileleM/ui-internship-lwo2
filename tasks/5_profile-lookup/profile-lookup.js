@@ -26,13 +26,8 @@ const contacts = [
 ];
 
 export function lookupProfile(firstName, prop) {
-  for (const contact of contacts) {
-    if (contact.firstName === firstName) {
-      if (contact.hasOwnProperty(prop)) {
-        return contact[prop];
-      }
-      return 'No such property';
-    }
-  }
-  return 'No such contact';
+  const contact = contacts.find((cont) => cont.firstName === firstName);
+  if (contact === undefined) return 'No such contact';
+  if (contact.hasOwnProperty(prop)) return contact[prop];
+  return 'No such property';
 }
