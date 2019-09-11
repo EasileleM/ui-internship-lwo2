@@ -1,3 +1,3 @@
 export function cloneArr(arr) {
-  return arr.slice();
+  return JSON.parse(JSON.stringify(arr));
 }
