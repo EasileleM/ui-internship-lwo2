@@ -4,8 +4,7 @@ export function largestOfFour(arr) {
     if (subArr.length === 0) result.push(NaN);
     else {
       result
-          .push(subArr.reduce(
-              (max, num) => num > max ? num : max, -Infinity));
+          .push(subArr.reduce((max, num) => Math.max(max, num), -Infinity));
     }
   });
   return result;

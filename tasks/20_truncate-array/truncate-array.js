@@ -1,4 +1,5 @@
 export function truncateArray(arr, howMany) {
-  arr.splice(0, howMany);
-  return arr;
+  const result = arr.slice();
+  result.splice(0, howMany);
+  return result;
 }
