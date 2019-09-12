@@ -27,7 +27,7 @@ const contacts = [
 
 export function lookupProfile(firstName, prop) {
   const contact = contacts.find((cont) => cont.firstName === firstName);
-  if (contact === undefined) {
+  if (!contact) {
     return 'No such contact';
   }
   if (contact.hasOwnProperty(prop)) {
