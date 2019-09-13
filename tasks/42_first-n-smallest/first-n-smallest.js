@@ -1,12 +1,7 @@
 export function firstNSmallest(arr, n) {
-  let arrClone = Array(...arr);
-  const result = Array(...arr);
-  const mins = new Set();
-  for (let i = 0; i < n; i++) {
-    let min = Math.min(...arrClone);
-    arrClone = arrClone.filter((value) => value !== min);
-    mins.add(min);
+  let arrCloneRev = Array(...arr).reverse();
+  while (arrCloneRev.length !== n) {
+    arrCloneRev.splice(arrCloneRev.indexOf(Math.max(...arrCloneRev)), 1);
   }
-  return result.filter((value) => mins.has(value));
+  return arrCloneRev.reverse();
 }
-// TODO
