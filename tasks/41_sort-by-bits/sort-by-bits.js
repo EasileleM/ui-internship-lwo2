@@ -6,7 +6,7 @@
 //       .length;
 // }
 
-// Bitwise version, faster that previous
+// Bitwise version, faster than previous
 function countBits(a) {
   let result = 0;
   for (let i = 0; i < 32; i++) {

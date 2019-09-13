@@ -1,8 +1,8 @@
 export function stringExpansion(str) {
   const words = str.split(/[0-9]+/g);
-  // this regex lead to one useless array element "" with 0 index
+  // this regex leads to one useless array element "" with 0 index
   const repeatitions = str.split(/[A-Za-z]+/g);
-  // this regex lead to one useless array element ""
+  // this regex leads to one useless array element ""
   // with repetition.lenght - 1 index
   // it cause these magic numbers in the loop below
   const amountOfWords = words.length - 1;

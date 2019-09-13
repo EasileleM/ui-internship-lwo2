@@ -13,7 +13,7 @@ export class SimTime {
   update(currentRealTime) {
     if (currentRealTime < this.realTime) {
       throw String('Time mustn\'t go backwords');
-      // String wrapper user there to avoid ESlint complaints
+      // String wrapper used there to avoid ESlint complaints
     }
     this.time += (currentRealTime - this.realTime) * this.speed;
     this.realTime = currentRealTime;
