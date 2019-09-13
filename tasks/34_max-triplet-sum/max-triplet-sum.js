@@ -1,8 +1,9 @@
 export function maxTripletSum(arr) {
+  let arrClone = Array(...arr);
   let result = 0;
   for (let i = 0; i < 3; i++) {
-    const tempMax = Math.max(...arr);
-    arr = arr.filter((value) => value !== tempMax);
+    const tempMax = Math.max(...arrClone);
+    arrClone = arrClone.filter((value) => value !== tempMax);
     result += tempMax;
   }
   return result;
@@ -10,10 +11,11 @@ export function maxTripletSum(arr) {
 
 // bonus solution
 // export function maxNSum(arr, n) {
+// let arrClone = Array(...arr);
 //   let result = 0;
 //   for (let i = 0; i < n; i++) {
-//     const tempMax = Math.max(...arr);
-//     arr = arr.filter((value) => value !== tempMax);
+//     const tempMax = Math.max(...arrClone);
+//     arrClone = arrClone.filter((value) => value !== tempMax);
 //     result += tempMax;
 //   }
 //   return result;
