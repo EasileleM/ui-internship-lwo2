@@ -11,7 +11,7 @@ export function maxTripletSum(arr) {
 
 // bonus solution
 // export function maxNSum(arr, n) {
-// let arrClone = Array(...arr);
+//   let arrClone = Array(...arr);
 //   let result = 0;
 //   for (let i = 0; i < n; i++) {
 //     const tempMax = Math.max(...arrClone);
