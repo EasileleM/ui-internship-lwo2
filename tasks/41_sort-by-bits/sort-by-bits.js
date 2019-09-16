@@ -19,8 +19,8 @@ function countBits(a) {
 
 export function sortByBits(arr) {
   return arr.sort((a, b) => {
-    let bitsA = countBits(a);
-    let bitsB = countBits(b);
+    const bitsA = countBits(a);
+    const bitsB = countBits(b);
     if (bitsA !== bitsB) {
       return bitsA - bitsB;
     }
