@@ -1,11 +1,11 @@
-const isPrime = (num) => {
-  for (let i = 2, numSqrt = Math.sqrt(num); i < numSqrt; i++) {
+function isPrime(num) {
+  for (let i = 2, numSqrt = Math.sqrt(num); i <= numSqrt; i++) {
     if (!(num % i)) {
       return false;
     }
   }
   return true;
-};
+}
 
 export function minNumberToPrime(arr) {
   const sum = arr.reduce((sum, value) => sum += value);
