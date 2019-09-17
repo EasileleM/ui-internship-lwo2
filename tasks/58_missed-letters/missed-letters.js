@@ -14,5 +14,4 @@ export function findLetter(str) {
     }
     prevCharCode = currCharCode;
   }
-  return undefined;
 }
