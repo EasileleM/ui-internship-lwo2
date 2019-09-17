@@ -1,6 +1,7 @@
 /**
- * dropElements - Drop the elements of an array,
- * starting from the front, until the predicate returns true.
+ * dropElements - return all array(first argument) elements with index,
+ * that are larger or equal than index of first element, which
+ * matches with predicate(second argument)
  * @example
  * // return [1, 0, 1]
  * dropElements([0, 1, 0, 1], function(n) {return n === 1;})

@@ -1,5 +1,7 @@
 /**
- * unpackArray - flatten a nested array
+ * unpackArray - return an array of non-array elements,
+ * that are nested in passed array,
+ * accounting for varying levels of nesting
  * @example
  * // return  [1, 2, 3, 4]
  * unpackArray([1, [2], [3, [[4]]]])

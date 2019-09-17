@@ -1,6 +1,6 @@
 /**
- * binaryDecode - return an English translated sentence
- * of the passed binary string
+ * binaryDecode - return sequence of characters that are decoded
+ * from the passed binary numbers sequence
  * @example
  * // return 'bonfire!'
  * binaryDecode('00100000 01100010 01101111 01101110' +

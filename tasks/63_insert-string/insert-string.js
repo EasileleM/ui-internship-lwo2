@@ -2,8 +2,8 @@
  * insert - inserts one string into another on given position
  * If no insertable string is given, returns unchanged string
  * @example
- * // return 'We are doing some exercises.'
- * insert('We are doing some exercises.')
+ * // return 'We are doing some JavaScript exercises.'
+ * insert('We are doing some exercises.','JavaScript ',18)
  * @param {string} str
  * @param {string} insertable
  * @param {number} position
