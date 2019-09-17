@@ -1,7 +1,9 @@
 /**
  * findLetter - finds missing letter in sequence of
  * letters, sorted in alphabetical order
- *
+ * @example
+ * // return 'd'
+ * findLetter('abce')
  * @param {String} str
  * @return {String}
  */

@@ -1,6 +1,8 @@
 /**
  * sumAll - returns sum of all numbers in given range
- *
+ * @example
+ * // return 10.
+ * sumAll([1, 4])
  * @param {Array} range
  * @return {Number}
  */

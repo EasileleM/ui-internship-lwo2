@@ -1,7 +1,12 @@
 /**
  * abbreviated - converting full name in
  * abbreviation form
- *
+ * @example
+ * // return 'Verbovyi'
+ * abbreviated('Verbovyi')
+ * @example
+ * // return 'Verbovyi D. O.'
+ * abbreviated('Verbovyi Dmytro Oleksandrovych')
  * @param {String} str
  * @return {String}
  */

@@ -1,6 +1,8 @@
 /**
  * translatePigLatin - translates provided word into Pig Latin
- *
+ * @example
+ * // return "eightway"
+ * translatePigLatin('eight')
  * @param {String} str
  * @return {String}
  */

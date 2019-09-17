@@ -1,7 +1,12 @@
 /**
  * whatIsInAName - return an array of all objects from arrObj
  * that have matching property and value pairs with target
- *
+ * @example
+ * // return [{ first: 'Tybalt', last: 'Capulet' }]
+ * whatIsInAName([{ first: 'Romeo', last: 'Montague' },
+ * { first: 'Mercutio', last: null },
+ * { first: 'Tybalt', last: 'Capulet' }],
+ * { last: 'Capulet' })
  * @param {Array} arrObj
  * @param {Object} target
  * @return {Array}

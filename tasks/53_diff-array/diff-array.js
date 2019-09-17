@@ -1,6 +1,8 @@
 /**
  * diffArray - returns symmetric difference of the two arrays
- *
+ * @example
+ * // return [4]
+ * diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5])
  * @param {Array} arr1
  * @param {Array} arr2
  * @return {Array}

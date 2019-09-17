@@ -1,6 +1,8 @@
 /**
  * convertHTML - convert &<>"' characters into html entities
- *
+ * @example
+ * // return 'Dolce &amp; Gabbana'
+ * convertHTML('Dolce & Gabbana')
  * @param {String} str
  * @return {String}
  */

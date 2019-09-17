@@ -3,7 +3,9 @@
  * rank (number with only one non-null digit)
  * of any number to roman numbers (e.g. 500 to D).
  * Depends on romanDig function
- *
+ * @example
+ * // return DC
+ * rankToRoman(600)
  * @param {Number} rank
  * @param {Number} digit
  * @return {String}
@@ -26,7 +28,12 @@ function rankToRoman(rank, digit) {
 /**
  * romanDig - converts number to one roman number if
  * it's possible. If not, returns empty string
- *
+ * @example
+ * // return 'I'
+ * romanDig(1)
+ * @example
+ * // return ''
+ * romanDig(12)
  * @param {Number} number
  * @return {String}
  */
@@ -46,7 +53,9 @@ function romanDig(number) {
 /**
  * convertToRoman - converts decimal number
  * to roman number
- *
+ * @example
+ * // return XXXVI
+ * convertToRoman(36)
  * @param {Number} num
  * @return {String}
  */
