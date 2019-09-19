@@ -7,7 +7,7 @@
  * @return {String}
  */
 export function translatePigLatin(str) {
-  const vowels = 'qeuioa';
+  const vowels = 'euioa';
   if (vowels.includes(str.charAt(0))) {
     return str + 'way';
   }
