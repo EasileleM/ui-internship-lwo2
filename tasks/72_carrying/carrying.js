@@ -14,15 +14,15 @@
  * @return {(number|function)}
  */
 export function addTogether(a, b) {
-  function addTogetherInner(c) {
-    if (typeof(c) === 'number') {
-      return a + c;
+  if (arguments.length > 0 && typeof(a) === 'number') {
+    if (arguments.length > 1 && typeof(b) === 'number') {
+      return a + b;
+    } else if (arguments.length < 2) {
+      return function(c) {
+        if (typeof(c) === 'number') {
+          return a + c;
+        }
+      };
     }
-  }
-  if (typeof(a) === 'number') {
-    if (arguments.length === 1) {
-      return addTogetherInner;
-    }
-    return addTogetherInner(b);
   }
 }
