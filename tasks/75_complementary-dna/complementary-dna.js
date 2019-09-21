@@ -5,14 +5,14 @@
  * @example
  * // return 'AGC'
  * DNAStrand('TCG')
- * @param {string} str
- * @return {string}
+ * @param {string} dnaStrand
+ * @return {string} opposite dna strand to passed dna strand
  */
-export function DNAStrand(str) {
-  let result = '';
+export function DNAStrand(dnaStrand) {
+  let oppositeDnaStrand = '';
   const pairs = {'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G'};
-  for (const symbol of str) {
-    result += pairs[symbol];
+  for (const symbol of dnaStrand) {
+    oppositeDnaStrand += pairs[symbol];
   }
-  return result;
+  return oppositeDnaStrand;
 }

@@ -4,7 +4,7 @@
  * //return {a: 1, b:{c:4}}
  * deepClone({a:1, b:{c:4}})
  * @param {Object} obj
- * @return {Object}
+ * @return {Object} deep copy of passed object
  */
 export function deepClone(obj) {
   const cloneObj = {};

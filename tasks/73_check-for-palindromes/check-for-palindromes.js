@@ -9,11 +9,11 @@
  * @example
  * // return false
  * palindrome('nope')
- * @param {string} str
+ * @param {string} inputString
  * @return {boolean}
  */
-export function palindrome(str) {
-  const target = str.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
+export function palindrome(inputString) {
+  const target = inputString.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
   const halfTargetLen = target.length / 2;
   for (let i = 0; i < halfTargetLen; i++) {
     if (target.charAt(i) !== target.charAt(target.length - 1 - i)) {

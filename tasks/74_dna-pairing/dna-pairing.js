@@ -4,13 +4,13 @@
  * DNA character that together they form complete DNA pair
  * @example
  * // return [["A","T"],["T","A"],["C","G"],["G","C"],["A","T"]]
- * DNAStrand('ATCGA')
- * @param {string} str
- * @return {Array}
+ * pairElement('ATCGA')
+ * @param {string} dnaStrand
+ * @return {Array} array with dna pairs
  */
-export function pairElement(str) {
+export function pairElement(dnaStrand) {
   const pairs = {'A': 'T', 'T': 'A', 'G': 'C', 'C': 'G'};
-  return str
+  return dnaStrand
       .split('')
       .map((value) => [value, pairs[value]]);
 }

@@ -8,15 +8,15 @@
  * '00100000 01100100 01101111 01101110 00100111 01110100 00100000' +
  * '01100101 01100001 01110100 00100000 01100011 01100001 01100011' +
  * '01101000 01100101 00101110')
- * @param {string} str
- * @return {string}
+ * @param {string} binarySequence given binary sequence
+ * @return {string} encoded symbols
  */
-export function binaryEncode(str) {
-  if (!str) {
+export function binaryEncode(binarySequence) {
+  if (!binarySequence) {
     return '';
   }
   return Array
-      .from(str)
+      .from(binarySequence)
       .map((value) => {
         let tempCode = value.charCodeAt(0).toString(2);
         while (tempCode.length !== 8) {

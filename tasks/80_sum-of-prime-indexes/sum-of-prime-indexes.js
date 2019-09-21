@@ -3,8 +3,8 @@
  * @example
  * // return true
  * isPrime(7)
- * @param {number} num
- * @return {number}
+ * @param {number} num number to check
+ * @return {boolean}
  */
 function isPrime(num) {
   for (let i = 2, numSqrt = Math.sqrt(num); i <= numSqrt; i++) {
@@ -21,15 +21,15 @@ function isPrime(num) {
  * @example
  * // return 7
  * sumPrimeIndexedElements([1, 2, 3, 4])
- * @param {array} array
- * @return {number}
+ * @param {array} array elements
+ * @return {number} sum of prime indexed elements
  */
 export function sumPrimeIndexedElements(array) {
-  let result = 0;
+  let sum = 0;
   for (let i = 2; i < array.length; i++) {
     if (isPrime(i)) {
-      result += array[i];
+      sum += array[i];
     }
   }
-  return result;
+  return sum;
 }

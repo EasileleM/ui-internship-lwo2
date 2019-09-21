@@ -4,14 +4,14 @@
  * if the string is valid, and false if it's invalid.
  * A string of braces is considered valid if all braces
  * are matched with the correct brace.
- * @param {string} str
- * @return {string}
+ * @param {string} bracketSequence
+ * @return {boolean}
  */
-export function validBraces(str) {
+export function validBraces(bracketSequence) {
   const stack = [];
   const openBr = ['(', '{', '['];
   const closeBr = [')', '}', ']'];
-  for (const bracket of str) {
+  for (const bracket of bracketSequence) {
     const stackHead = stack[stack.length - 1];
     if (openBr.includes(bracket)) {
       stack.push(bracket);

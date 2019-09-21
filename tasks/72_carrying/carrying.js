@@ -9,9 +9,10 @@
  * @example
  * // return 4
  * addTogether(1)(3)
- * @param {number} a
- * @param {number} b
- * @return {(number|function)}
+ * @param {number} a first number
+ * @param {number} b second number
+ * @return {(number|function)} sum of passed numbers or
+ * carrier function with one number inside
  */
 export function addTogether(a, b) {
   if (arguments.length > 0 && typeof(a) === 'number') {

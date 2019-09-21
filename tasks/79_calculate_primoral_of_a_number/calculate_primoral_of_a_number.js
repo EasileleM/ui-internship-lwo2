@@ -3,8 +3,8 @@
  * @example
  * // return true
  * isPrime(7)
- * @param {number} num
- * @return {number}
+ * @param {number} num number to check
+ * @return {boolean}
  */
 function isPrime(num) {
   for (let i = 2, numSqrt = Math.sqrt(num); i <= numSqrt; i++) {
@@ -22,17 +22,17 @@ function isPrime(num) {
  * @example
  * // return 2310
  * numPrimorial(5)
- * @param {number} num
- * @return {number}
+ * @param {number} n amount of multiplied prime numbers
+ * @return {number} primorial
  */
-export function numPrimorial(num) {
+export function numPrimorial(n) {
   let counter = 0;
-  let result = 1;
-  for (let i = 2; counter !== num; i++) {
+  let primorial = 1;
+  for (let i = 2; counter !== n; i++) {
     if (isPrime(i)) {
-      result *= i;
+      primorial *= i;
       counter++;
     }
   }
-  return result;
+  return primorial;
 }
