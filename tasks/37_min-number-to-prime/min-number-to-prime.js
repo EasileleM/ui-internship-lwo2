@@ -1,4 +1,7 @@
 function isPrime(num) {
+  if (num === 1) {
+    return false;
+  }
   for (let i = 2, numSqrt = Math.sqrt(num); i <= numSqrt; i++) {
     if (!(num % i)) {
       return false;
