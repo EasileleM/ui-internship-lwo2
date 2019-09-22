@@ -26,9 +26,8 @@ export function LinkedList() {
   let tail = null;
   let amount = 0;
   /**
-   * insertAfterNode - service function, that inserts
-   * creates new node with passed value and inserts
-   * it after passed node
+   * insertAfterNode - service function, that creates new node with
+   * passed value and inserts it after passed node
    * @param {Object} node
    * @param {*} value
    */
