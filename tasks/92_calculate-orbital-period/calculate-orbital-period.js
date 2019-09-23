@@ -10,8 +10,9 @@ export function orbitalPeriod(bodies) {
   const PI = 3.14159265359;
   const bodiesCopy = JSON.parse(JSON.stringify(bodies));
   for (const body of bodiesCopy) {
-    body['orbitalPeriod'] = Math.round(2 * PI * Math.sqrt(Math.pow(body.avgAlt
-      + EARTH_RADIUS, 3) / GM));
+    const distance = body.avgAlt + EARTH_RADIUS;
+    body.orbitalPeriod = Math
+        .round(2 * PI * Math.sqrt(Math.pow(distance, 3) / GM));
     delete body.avgAlt;
   }
   return bodiesCopy;
