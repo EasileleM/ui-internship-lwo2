@@ -1,5 +1,6 @@
 // import { Person } from './make-a-person';
 
+// commented bad test
 xdescribe('Make a person', () => {
     let bob;
 
@@ -36,10 +37,10 @@ xdescribe('Make a person', () => {
         expect(bob.getFullName()).toBe('Haskell Ross');
     });
 
-    test('bob.getFullName() should return "Haskell Ross" after bob.setLastName("Curry")', () => {
-        bob.setLastName('Curry');
-        expect(bob.getFullName()).toBe('Haskell Curry');
-    });
+    // test('bob.getFullName() should return "Haskell Ross" after bob.setLastName("Curry")', () => {
+    //     bob.setLastName('Curry');
+    //     expect(bob.getFullName()).toBe('Haskell Curry');
+    // });
 
     test('bob.getFullName() should return "Haskell Curry" after bob.setFullName("Haskell Curry")', () => {
         bob.setFullName('Haskell Curry')
